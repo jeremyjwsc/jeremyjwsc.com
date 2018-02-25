@@ -30,6 +30,12 @@
                     {% else %}
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel: +34 664 146 397">+34 616 688 724</a></li>
                     {% endif %}
+					
+					{% if site.skype %}
+                    <li class="skype"><i class="fa fa-skype"></i><a href="https://skype.com/{{site.skype}}">{{site.skype}}</a></li>
+                    {% else %}
+                    <li class="skype"><i class="fa fa-skype"></i><a href="skype id: jwilliams2807">jwilliams2807</a></li>
+                    {% endif %} 
 
                     {% if site.website %}
                     <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
