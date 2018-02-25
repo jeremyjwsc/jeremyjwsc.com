@@ -11,10 +11,16 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
 
+					{% if site.letter %}
+                    <li class="letter"><i class="fa fa-letter"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% else %}
+                    <li class="letter"><i class="fa fa-letter"></i><a href="https://drive.google.com/file/d/14aOq5_-Ud-rym-zS84mPWCusdhdaBmTR/view?usp=sharing">Full CV</a></li>
+                    {% endif %}
+					
                    {% if site.email %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
                     {% else %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:aljrico@gmail.com">jeremyjwsc@gmail.com</a></li>
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:jeremyjwsc@gmail.com">jeremyjwsc@gmail.com</a></li>
                     {% endif %}
 
                     {% if site.phone %}
