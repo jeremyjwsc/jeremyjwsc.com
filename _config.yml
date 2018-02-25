@@ -1,0 +1,27 @@
+
+title: My Resume
+url: 'jeremyjwsc.github.io'
+baseurl: '' #change it according to your repository name
+
+
+# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
+#style: styles-2
+#style: styles-3
+#style: styles-4
+#style: styles-5
+style: styles-6
+
+
+#Profile information
+name: Jeremy Johnathan Williams
+tagline: Scientist building blocks upward towards Data Science/Engineering, Research and Technology
+pic: distributed_systems.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+#sidebar links
+email: jeremyjwsc@gmail.com
+phone: +34 616 688 724
+website: jeremyjwsc.github.io #do not add http://
+linkedin: jeremyjwsc
+github: jeremyjwsc
+
+#Update all the sections by editing the files inside _includes folder.
