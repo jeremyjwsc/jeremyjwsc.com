@@ -15,7 +15,7 @@ style: styles-6
 #Profile information
 name: Jeremy Johnathan Williams
 tagline: Building blocks upward towards Engineering, Science, Research and Technology
-pic: cloud_analytics.jpg  #place a 200x200 picture inside /assets/images/ folder and provide the name of the file below
+pic: cloud_analytics.jpg  #place a 300x300 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
 email: jeremyjwsc@gmail.com
