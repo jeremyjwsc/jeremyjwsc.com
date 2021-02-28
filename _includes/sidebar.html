@@ -54,18 +54,18 @@
                     {% else %}
                     <li class="skype"><i class="fa fa-skype"></i>jwilliams2807</a></li>
                     {% endif %} 
+					
+                    {% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% else %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">bit.ly/jeremyjwsc</a></li>
+                    {% endif %}
 
                     <!--{% if site.website %}
                     <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
                     {% else %}
                     <li class="website"><i class="fa fa-globe"></i><a href="https://jeremyjwsc.github.io" target="_blank">jeremyjwsc.github.io</a></li>
                     {% endif %}-->
-
-                    {% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
-                    {% else %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">bit.ly/jeremyjwsc</a></li>
-                    {% endif %}
 					
                     <!--{% if site.linkedin %}
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
