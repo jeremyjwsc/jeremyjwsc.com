@@ -25,6 +25,12 @@
                     <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3syXWAD">Full CV</a></li>
                     {% endif %}
 					
+					{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3jlA6FP">Short CV</a></li>
+                    {% endif %}
+					
 					<!--{% if site.resume %}
                     <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
                     {% else %}
