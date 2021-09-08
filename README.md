@@ -1,2 +1,2 @@
-# jeremyjwsc.github.io
+# jeremyjwsc.com
 Personal Website 
