@@ -1,123 +1,25 @@
-<!-- Use icons from fontawesome when you are adding new item in the contact list  -->
+{% include base_path %}
 
-
-     <div class="sidebar-wrapper"> 
-            <div class="profile-container">
-                <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
-                <h1 class="name">{% if site.name %}{{site.name}}{% else %}Jeremy J. Williams{% endif %}</h1>
-                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Building blocks upward towards Engineering, Science, Research and Technology.{% endif %}</h3>
-            </div><!--//profile-container-->
-
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-
-					<!--{% if site.CV %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="http://{{site.CV}}" target="_blank">{{site.CV}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="https://drive.google.com/file/d/14aOq5_-Ud-rym-zS84mPWCusdhdaBmTR/view?usp=sharing">Full CV (English)</a></li>
-                    
-					<li class="CV"><i class="fa fa-CV"></i><a href="https://drive.google.com/file/d/1TkV-lPwXAEHZ5gB-jxj4Ttt9kDTRZpfA/view?usp=sharing">Full CV (Castilian/Spanish)</a></li>
-					{% endif %}-->
-					
-					<!--{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3syXWAD">Full Pro CV</a></li>
-                    {% endif %}--> 
-					
-					{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="https://bit.ly/392TDGi">Full CV</a></li>
-                    {% endif %}
-					
-					{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="https://bit.ly/3E9se3F">Short CV</a></li>
-                    {% endif %}
-					
-					<!--{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3jlA6FP">Short Pro CV</a></li>
-                    {% endif %}--> 
-					
-					<!--{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/2GFqGUY">Full CV (English)</a></li>
-                    {% endif %}-->
-					
-					<!--{% if site.resume %}
-                    <li class="resume"><i class="fa fa-resume"></i></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
-                    {% else %}
-                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/2GLdYA5">Full CV (Castilian/Spanish)</a></li>
-                    {% endif %}--> 
-					
-                    {% if site.email %}
-                    <li class="email"><i class="fa fa-envelope"></i>jeremyjwsc at gmail.com</a></li>
-                    {% else %}
-                    <li class="email"><i class="fa fa-envelope"></i>jeremyjwsc at gmail.com</a></li> 
-                    {% endif %}
-					
-                    <!--{% if site.email %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{site.email}}">{{site.email}}</a></li>
-                    {% else %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:jeremyjwsc@gmail.com">jeremyjwsc [at] gmail.com</a></li>
-                    {% endif %}--> 
-
-                    <!--{% if site.phone %}
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
-                    {% else %}
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel: XXX-XXX-XXX">XXX-XXX-XXX</a></li>
-                    {% endif %}-->
-					
-					<!--{% if site.skype %}
-                    <li class="skype"><i class="fa fa-skype"></i><a href="https://web.skype.com/{{site.skype}}">{{site.skype}}</a></li>
-                    {% else %}
-                    <li class="skype"><i class="fa fa-skype"></i>jwilliams2807</a></li>
-                    {% endif %}--> 
-					
-                    <!--{% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="https://{{site.website}}" target="_blank">{{site.website}}</a></li>
-                    {% else %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">jeremyjwsc.com</a></li>
-                    {% endif %}--> 
-
-                    {% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">jeremyjwsc.com</a></li>
-                    {% else %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="https://jeremyjwsc.com" target="_blank">jeremyjwsc.com</a></li>
-                    {% endif %} 
-
-                    <!--{% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
-                    {% else %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="https://jeremyjwsc.github.io" target="_blank">jeremyjwsc.github.io</a></li>
-                    {% endif %}-->
-					
-                    <!--{% if site.linkedin %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
-                    {% else %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/jeremyjwsc" target="_blank">linkedin.com/in/jeremyjwsc</a></li>
-                    {% endif %}-->
-
-                    <!--{% if site.github %}
-                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
-                    {% else %}
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/jeremyjwsc" target="_blank">github.com/jeremyjwsc</a></li>
-                    {% endif %}-->
-                    <!-- {% if site.twitter %}
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
-                    {% else %}
-                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
-                    {% endif %} -->
-                </ul>
-            </div><!--//contact-container-->
-           {% include education.html %}
-           {% include language.html %}
-           {% include interests.html %}
-
-
-        </div><!--//sidebar-wrapper-->
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+  <div class="sidebar sticky">
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.sidebar %}
+    {% for s in page.sidebar %}
+      {% if s.image %}
+        <img src=
+        {% if s.image contains "://" %}
+          "{{ s.image }}"
+        {% else %}
+          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+      {% endif %}
+      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+    {% endfor %}
+    {% if page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
+    {% endif %}
+  {% endif %}
+  </div>
+{% endif %}
