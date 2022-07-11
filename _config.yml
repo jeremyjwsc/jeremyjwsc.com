@@ -1,27 +1,63 @@
+# Site settings
+title: Ethan Pickering
+email: pickering@mit.edu
+description: Academic webpage of Ethan Pickering
+baseurl: ""
+url: ""
+affiliation: I am part of the <a href="http://meche.mit.edu/" target="_blank">Mechanical Engineering Department</a> at the Massachusetts Institute of Technology
 
-title: CV
-url: 'jeremyjwsc.github.io' 
-baseurl: '' #change it according to your repository name
+# Google analytics ID
+google_analytics: UA-176412042-1
 
+# Location info. (shown in footer)
+location: >
+  Coordinates: <br/>
+  Building 5 <br/>
+  Massachusetts Institute of Technology <br/>
+  77 Massachusetts Ave<br/>
+  Cambridge, MA 02139<br/>
 
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-style: styles-6
+# Contact info. (shown in footer)
+contact: >
+    Contact Ethan via email: <a href="mailto:pickering@mit.edu" target="_blank">pickering@mit.edu</a> <br/>
+    <br/><a href="/aboutwebsite.html">Use this webpage as a template for your own!</a>
 
+# Pages shown in navbar
+nav_pages:
+  - name: about
+  - name: publications
+  - name: talks
+  - name: service
+# - name: research
+# - name: software
+# - name: team
+# - name: teaching
 
-#Profile information
-name: Jeremy J. Williams
-tagline: Building blocks upward towards Engineering, Science, Research and Technology
-pic: cloud_analytics.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+# Do you want to group your publications by year? {true/false}
+group_pub_by_year: true
 
-#sidebar links
-email: jeremyjwsc at gmail.com
-#phone: XXX-XXX-XXX
-website: jeremyjwsc.github.io #do not add http://
-#linkedin: jeremyjwsc
-#github: jeremyjwsc
+include:
+  - .htaccess
+  - _pages
 
-#Update all the sections by editing the files inside _includes folder.
+sass:
+  sass_dir: _sass
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
