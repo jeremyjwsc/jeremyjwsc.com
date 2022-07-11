@@ -1,99 +1,123 @@
-<div class="well">
-<h4>{{ site.name }}</h4>
+<!-- Use icons from fontawesome when you are adding new item in the contact list  -->
 
-{% for member in site.data.pi %}
-<div class="row">
-  <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="60%" style="block:inline; margin-left:auto; margin-right:auto;" /></a>
-  <center><h4>{{ member.name }}</h4>
 
-   {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-   {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-   {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-   {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
-   {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
-  </center>
-  <ul style="overflow: hidden">
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1short }} </li>
-  {% endif %}
+     <div class="sidebar-wrapper"> 
+            <div class="profile-container">
+                <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
+                <h1 class="name">{% if site.name %}{{site.name}}{% else %}Jeremy J. Williams{% endif %}</h1>
+                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Building blocks upward towards Engineering, Science, Research and Technology.{% endif %}</h3>
+            </div><!--//profile-container-->
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1short }} </li>
-  <li> {{ member.education2short }} </li>
-  {% endif %}
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1short }} </li>
-  <li> {{ member.education2short }} </li>
-  <li> {{ member.education3short }} </li>
-  {% endif %}
+					<!--{% if site.CV %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://{{site.CV}}" target="_blank">{{site.CV}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="https://drive.google.com/file/d/14aOq5_-Ud-rym-zS84mPWCusdhdaBmTR/view?usp=sharing">Full CV (English)</a></li>
+                    
+					<li class="CV"><i class="fa fa-CV"></i><a href="https://drive.google.com/file/d/1TkV-lPwXAEHZ5gB-jxj4Ttt9kDTRZpfA/view?usp=sharing">Full CV (Castilian/Spanish)</a></li>
+					{% endif %}-->
+					
+					<!--{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3syXWAD">Full Pro CV</a></li>
+                    {% endif %}--> 
+					
+					{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="https://bit.ly/392TDGi">Full CV</a></li>
+                    {% endif %}
+					
+					{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="https://bit.ly/3E9se3F">Short CV</a></li>
+                    {% endif %}
+					
+					<!--{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/3jlA6FP">Short Pro CV</a></li>
+                    {% endif %}--> 
+					
+					<!--{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/2GFqGUY">Full CV (English)</a></li>
+                    {% endif %}-->
+					
+					<!--{% if site.resume %}
+                    <li class="resume"><i class="fa fa-resume"></i></i><a href="https://resume.com/{{site.resume}}">{{site.resume}}</a></li>
+                    {% else %}
+                    <li class="CV"><i class="fa fa-CV"></i><a href="http://bit.ly/2GLdYA5">Full CV (Castilian/Spanish)</a></li>
+                    {% endif %}--> 
+					
+                    {% if site.email %}
+                    <li class="email"><i class="fa fa-envelope"></i>jeremyjwsc at gmail.com</a></li>
+                    {% else %}
+                    <li class="email"><i class="fa fa-envelope"></i>jeremyjwsc at gmail.com</a></li> 
+                    {% endif %}
+					
+                    <!--{% if site.email %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+                    {% else %}
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:jeremyjwsc@gmail.com">jeremyjwsc [at] gmail.com</a></li>
+                    {% endif %}--> 
 
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1short }} </li>
-  <li> {{ member.education2short }} </li>
-  <li> {{ member.education3short }} </li>
-  <li> {{ member.education4short }} </li>
-  {% endif %}
+                    <!--{% if site.phone %}
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                    {% else %}
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel: XXX-XXX-XXX">XXX-XXX-XXX</a></li>
+                    {% endif %}-->
+					
+					<!--{% if site.skype %}
+                    <li class="skype"><i class="fa fa-skype"></i><a href="https://web.skype.com/{{site.skype}}">{{site.skype}}</a></li>
+                    {% else %}
+                    <li class="skype"><i class="fa fa-skype"></i>jwilliams2807</a></li>
+                    {% endif %}--> 
+					
+                    <!--{% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="https://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% else %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">jeremyjwsc.com</a></li>
+                    {% endif %}--> 
 
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1short }} </li>
-  <li> {{ member.education2short }} </li>
-  <li> {{ member.education3short }} </li>
-  <li> {{ member.education4short }} </li>
-  <li> {{ member.education5short }} </li>
-  {% endif %}
+                    {% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://bit.ly/jeremyjwsc" target="_blank">jeremyjwsc.com</a></li>
+                    {% else %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="https://jeremyjwsc.com" target="_blank">jeremyjwsc.com</a></li>
+                    {% endif %} 
 
-  {% if member.number_educ == 6 %}
-  <li> {{ member.education1short }} </li>
-  <li> {{ member.education2short }} </li>
-  <li> {{ member.education3short }} </li>
-  <li> {{ member.education4short }} </li>
-  <!-- <li> {{ member.education5short }} </li> -->
-  <li> {{ member.education6short }} </li>
-  {% endif %}
-  </ul>
-</div>
+                    <!--{% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% else %}
+                    <li class="website"><i class="fa fa-globe"></i><a href="https://jeremyjwsc.github.io" target="_blank">jeremyjwsc.github.io</a></li>
+                    {% endif %}-->
+					
+                    <!--{% if site.linkedin %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+                    {% else %}
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/jeremyjwsc" target="_blank">linkedin.com/in/jeremyjwsc</a></li>
+                    {% endif %}-->
 
-{% endfor %}
-</div>
+                    <!--{% if site.github %}
+                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+                    {% else %}
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/jeremyjwsc" target="_blank">github.com/jeremyjwsc</a></li>
+                    {% endif %}-->
+                    <!-- {% if site.twitter %}
+                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+                    {% else %}
+                     <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
+                    {% endif %} -->
+                </ul>
+            </div><!--//contact-container-->
+           {% include education.html %}
+           {% include language.html %}
+           {% include interests.html %}
 
-<div class="well">
-<h4>News</h4>
 
-  {% for article in site.data.news limit:4 %}
-  {{ article.date }}
-    <p>{{ article.headline }}</p>
-  {% endfor %}
-  
-  <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
-
-</div>
-
-<div class="well">
-<h4>Upcoming Events</h4>
-  {% for article in site.data.events limit:5 %}
-  <b>{{ article.date }}</b>
-    <p>{{ article.headline }}<br/>
-    <i>{{ article.location }}</i></p>
-  {% endfor %}
-</div>
-
-<!-- <div class="well"> -->
-<!-- <h4>Funding</h4> -->
-<!--   <style> -->
-<!--    .mycenter { -->
-<!--       display: block; -->
-<!--       margin-left: auto; -->
-<!--       margin-right: auto; -->
-<!--    } -->
-<!--   </style> -->
-<!--  {% for funder in site.data.funders %} -->
-<!--  {% if funder.url %} --> 
-<!--   <a href="{{funder.url}}" target="_blank"><img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/></a> -->
-<!--  {% else %} -->
-<!--   <img src='/images/logopic/{{ funder.image }}' class='mycenter' style='max-height: 70px; max-width: 200px;'/> -->
-<!--  {% endif %} --> 
-<!--  {% endfor %} -->
-<!-- </div> -->
-
+        </div><!--//sidebar-wrapper-->
