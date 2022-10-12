@@ -1,2 +1,1 @@
-# jeremyjwsc.com
-Personal Website 
+# Personal Website 
