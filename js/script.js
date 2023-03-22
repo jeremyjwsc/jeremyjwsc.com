@@ -1,1 +1,0 @@
-$(function(){$("main").draggable({containment:"window"})});
